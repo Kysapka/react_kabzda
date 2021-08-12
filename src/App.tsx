@@ -1,26 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import {Accordion} from './components/Accordion'
+import {Rating, RatingPropsType} from "./components/Rating/Rating";
+import {OnOff} from "./components/OnOff/OnOff";
+import {UncontrolledRating} from "./components/Rating/UnControlledRating";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    let [on1,setOn1] = useState<boolean>(false)
+    let [on2,setOn2] = useState<boolean>(false)
+    let [on3,setOn3] = useState<boolean>(false)
+    let [collapsed, setCollapsed] = useState<boolean>(true)
+    let [value, setValue] = useState<0 | 1 | 2 | 3 | 4 | 5>(0)
+
+    return (
+        <div className={"App"}>
+            <OnOff setOn={setOn1} on={on1}/>
+            <OnOff setOn={setOn2} on={on2}/>
+            <OnOff setOn={setOn3} on={on3}/>
+
+            {/*<OnOff on={false}/>*/}
+            {/*<OnOff on={true}/>*/}
+
+            <PageTitle title={'This is APP component'}/>
+            Article 1
+            {/*<Rating value={3}/>*/}
+
+            <Accordion titleValue={'Menu'} setCollapsed={setCollapsed} collapsed={collapsed}/>
+            <Accordion titleValue={'Users'} setCollapsed={setCollapsed} collapsed={collapsed}/>
+
+            Article 1
+            <Rating setValue={setValue} value={value}/>
+            <UncontrolledRating />
+            {/*<Rating value={1}/>*/}
+            {/*<Rating value={2}/>*/}
+            {/*<Rating value={3}/>*/}
+            {/*<Rating value={4}/>*/}
+            {/*<Rating value={5}/>*/}
+        </div>
+    );
 }
+
+type PageTitlePropsType = {
+    title: string
+}
+
+const PageTitle = (props: PageTitlePropsType) => {
+    return <div>{props.title}</div>
+}
+
 
 export default App;
