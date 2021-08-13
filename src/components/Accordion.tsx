@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-type AccordionPropsType = {
+export type AccordionPropsType = {
     titleValue: string
     setCollapsed: (collapsed: boolean) => void
     collapsed: boolean

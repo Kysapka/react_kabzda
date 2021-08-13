@@ -1,11 +1,11 @@
 import React, {Dispatch, SetStateAction} from 'react';
 
-type PropsType = {
+export type OnOffPropsType = {
     on: boolean
     setOn: Dispatch<SetStateAction<boolean>>
 }
 
-export const OnOff = (props: PropsType) => {
+export const OnOff = (props: OnOffPropsType) => {
 
 
 

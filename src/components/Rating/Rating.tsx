@@ -1,6 +1,9 @@
 import React, {Dispatch, SetStateAction, useState} from "react";
 
 export type RatingPropsType = {
+    /**
+     * Raiting value variants
+     */
     value: 0 | 1 | 2 | 3 | 4 | 5
     setValue: Dispatch<SetStateAction<0 | 1 | 2 | 3 | 4 | 5>>
 }
