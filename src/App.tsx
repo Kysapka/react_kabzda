@@ -3,7 +3,7 @@ import './App.css';
 import {Accordion} from './components/Accordion'
 import {Rating, RatingPropsType} from "./components/Rating/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
-import {UncontrolledRating} from "./components/Rating/UnControlledRating";
+import {UnControlledRating} from "./components/Rating/UnControlledRating";
 
 function App() {
 
@@ -31,7 +31,7 @@ function App() {
 
             Article 1
             <Rating setValue={setValue} value={value}/>
-            <UncontrolledRating />
+            <UnControlledRating />
             {/*<Rating value={1}/>*/}
             {/*<Rating value={2}/>*/}
             {/*<Rating value={3}/>*/}
