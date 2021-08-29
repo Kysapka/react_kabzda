@@ -1,5 +1,4 @@
 import React from "react";
-import {strict} from "assert";
 
 const increaseAge = (u: userType) => {
     u.age = u.age + 1;
@@ -11,7 +10,6 @@ type userType = {
     address?: {title: string}
 }
 
-
 test('reference type test', () => {
     let User: userType = {
         name: 'Artem',
@@ -22,7 +20,6 @@ test('reference type test', () => {
     superman.age = 1000;
     expect(User.age).toBe(1000)
 })
-
 test('Array reference test', () => {
 
     let Users = [
@@ -42,7 +39,6 @@ test('Array reference test', () => {
 
     expect(Users[2]).toEqual({name: 'Bandyugan', age: 10})
 })
-
 test('Value reference test', () => {
 
     let UsersCount = 100
@@ -54,7 +50,6 @@ test('Value reference test', () => {
     expect(UsersCount).toBe(100)
     expect(AdminsCount).toBe(101)
 })
-
 test('reference hard type test', () => {
     let User: userType = {
         name: 'Artem',
