@@ -1,0 +1,21 @@
+.main {
+    display: inline-block;
+    border: solid 1px black;
+    min-width: 40px;
+    min-height: 20px;
+}
+
+.items {
+    display: block;
+    position: absolute;
+    border: solid 1px black;
+}
+
+.item {
+    background-color: #1ea7fd;
+    color: white;
+}
+
+/*.select.active .items {*/
+/*    display: block;*/
+/*}*/

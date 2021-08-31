@@ -1,0 +1,32 @@
+.main {
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 150px;
+    /*height: 150px;*/
+    /*border: solid red 2px;*/
+}
+
+.item {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: solid green 2px;
+    textAlign: "center"
+}
+
+.item:focus {
+    transform: translate(500);
+    transition: opacity 0.5ms;
+}
+
+.selectedItem {
+    padding: 5px;
+    border: solid blue 2px;
+    font-size: large;
+    color: #1ea7fd;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

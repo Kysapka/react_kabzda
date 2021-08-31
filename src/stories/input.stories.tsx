@@ -64,7 +64,7 @@ export const ControlCheckBox = () => {
 }
 
 export const ControlSelect = () => {
-  let [parentValue, setParentValue] = useState<undefined | string>(undefined)
+  let [parentValue, setParentValue] = useState<undefined | string>('2')
 
   const setValue = (event: ChangeEvent<HTMLSelectElement>) => {
     action('select changed')
@@ -72,11 +72,11 @@ export const ControlSelect = () => {
   }
 
   return (
-      <select onChange={setValue}>
-        <option>none</option>
-        <option>Moscow</option>
-        <option>Minsk</option>
-        <option>New-York</option>
+      <select onChange={setValue} value={parentValue}>
+        <option value={'1'}>none</option>
+        <option value={'2'}>Moscow</option>
+        <option value={'3'}>Minsk</option>
+        <option value={'4'}>New-York</option>
       </select>
   )
 }
