@@ -8,7 +8,7 @@ export type AccordionPropsType = {
     // collapsed: boolean
 }
 
-export const Accordion = (props: AccordionPropsType) => {
+export const Accordion = React.memo((props: AccordionPropsType) => {
 
 
 
@@ -22,8 +22,8 @@ export const Accordion = (props: AccordionPropsType) => {
             <AccordionTitle title={props.titleValue} setCollapsedHandler={setCollapsedHandler}/>
             {!props.collapsed && <AccordionBody />}
         </div>
-)
-}
+    )
+})
 
 type AccordionTitleType = {
     title: string

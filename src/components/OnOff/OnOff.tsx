@@ -5,7 +5,7 @@ export type OnOffPropsType = {
     setOn: Dispatch<SetStateAction<boolean>>
 }
 
-export const OnOff = (props: OnOffPropsType) => {
+export const OnOff =  React.memo( (props: OnOffPropsType) => {
 
 
 
@@ -42,4 +42,4 @@ export const OnOff = (props: OnOffPropsType) => {
         <div style={indicatorStyle}></div>
 
     </div>
-}
+})
