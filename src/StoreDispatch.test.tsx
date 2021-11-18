@@ -1,4 +1,4 @@
-import {ItemType} from "./components/SuperSelectWithReducer";
+import {ItemType} from "./components/SuperSelect/SuperSelectWithReducer";
 
 type StateType = {
     itemsList: ItemType[]

@@ -1,6 +1,6 @@
 import React, {KeyboardEvent, useReducer, useState} from 'react'
 import styles from './SuperSelect2.module.css'
-import {StoreType, toggleReducerType} from "../stories/SuperSelect.stories";
+import {StoreType, toggleReducerType} from "../../stories/SuperSelect.stories";
 export const TOGGLE_ACTIVE = 'TOGGLE_ACTIVE'
 
 export type ItemType = {

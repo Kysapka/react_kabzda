@@ -1,8 +1,8 @@
-import {SuperSelect} from "../components/SuperSelect";
+import {SuperSelect} from "../components/SuperSelect/SuperSelect";
 import {v1} from "uuid";
-import {SuperSelect2} from "../components/SuperSelect2";
+import {SuperSelect2} from "../components/SuperSelect/SuperSelect2";
 import {useState} from "react";
-import {ItemType, SuperSelectWithReducer, TOGGLE_ACTIVE} from "../components/SuperSelectWithReducer";
+import {ItemType, SuperSelectWithReducer, TOGGLE_ACTIVE} from "../components/SuperSelect/SuperSelectWithReducer";
 
 export default {
     title: 'My Components/SuperSelect'

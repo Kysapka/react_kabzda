@@ -1,4 +1,4 @@
-import React, {ChangeEvent, memo, MouseEventHandler, useState} from 'react'
+import React, {useState} from 'react'
 import s from './SuperSelect.module.css'
 
 type SuperSelectType = {
