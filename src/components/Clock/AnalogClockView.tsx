@@ -14,6 +14,7 @@ export const AnalogClockView: React.FC<ClockViewPropsType> = ({date}) => {
         transform: `rotate(${date.getHours() * 30}deg)`
     };
 
+
     return (
         <div className={styles.clock}>
             <div className={styles["analog-clock"]}>
